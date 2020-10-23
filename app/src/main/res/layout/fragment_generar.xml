@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.GenerarFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:layout_margin="20dp"
+                android:gravity="top" android:id="@+id/layoutGenerar">
 
-    <TextView
-            android:id="@+id/text_home"
-            android:layout_width="match_parent"
+    <ImageView
+            android:id="@+id/generarImageQR"
+            android:layout_width="281dp"
+            android:layout_height="261dp"
+            app:srcCompat="?attr/actionModeSelectAllDrawable"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" android:background="@color/colorAccent"/>
+
+    <EditText
+            android:id="@+id/generarTextQR"
+            android:layout_width="309dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_below="@+id/generarImageQR"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:hint="Texto a trasformar" android:layout_marginTop="4dp" android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" android:layout_marginBottom="4dp"/>
+
+    <Button
+            android:id="@+id/generarBtnQR"
+            android:layout_width="147dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/generarTextQR"
+            android:text="Generar QR"
+            android:layout_centerHorizontal="true" android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
