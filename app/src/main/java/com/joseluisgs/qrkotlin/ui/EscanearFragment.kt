@@ -37,7 +37,7 @@ class EscanearFragment : Fragment() {
     }
 
     private fun scanQRCode() {
-        val integrator = IntentIntegrator(activity).apply {
+        val integrator = IntentIntegrator.forSupportFragment(this).apply {
             captureActivity = CaptureActivity::class.java
             setOrientationLocked(false)
             setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES)
