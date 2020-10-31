@@ -50,5 +50,6 @@ dependencies {
 
     // Mis librerías
     implementation 'com.google.zxing:core:3.4.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
 
 }
