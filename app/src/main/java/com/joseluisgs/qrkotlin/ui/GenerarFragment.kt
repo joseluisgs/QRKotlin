@@ -50,7 +50,7 @@ class GenerarFragment : Fragment() {
             val bitMatrix = codeWriter.encode(text, BarcodeFormat.QR_CODE, width, height)
             for (x in 0 until width) {
                 for (y in 0 until height) {
-                    bitmap.setPixel(x, y, if (bitMatrix[x, y]) Color.BLACK else Color.WHITE)
+                    bitmap.setPixel(x, y, if (bitMatrix[x, y]) Color.BLUE else Color.WHITE)
                 }
             }
         } catch (e: WriterException) {
