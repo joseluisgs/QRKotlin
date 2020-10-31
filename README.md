@@ -4,7 +4,7 @@
 
 [![Android](https://img.shields.io/badge/App-Android-g)](https://www.android.com/intl/es_es/)
 [![Kotlin](https://img.shields.io/badge/Code-Kotlin-blue)](https://kotlinlang.org/)
-[![LICENSE](https://img.shields.io/badge/Lisence-MIT-green)](https://github.com/joseluisgs/TodoBD2020/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/Lisence-MIT-green)](https://github.com/joseluisgs/QRKotlin/blob/master/LICENSE)
 ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/QRKotlin)
 
 ## Descripción
